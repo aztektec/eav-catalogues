@@ -113,9 +113,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 -- Table `eav_entity_attribute_group`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `eav_entity_attribute_group` ;
+DROP TABLE IF EXISTS `eav_attribute_group` ;
 
-CREATE TABLE IF NOT EXISTS `eav_entity_attribute_group` (
+CREATE TABLE IF NOT EXISTS `eav_attribute_group` (
   `entity_attribute_group_id` INT NOT NULL,
   `entity_attribute_id` INT NOT NULL,
   `entity_group_id` INT NOT NULL,
