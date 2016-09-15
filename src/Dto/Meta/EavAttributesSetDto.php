@@ -9,7 +9,7 @@
 namespace Aztektec\EAV\Dto\Meta;
 
 
-class EavAttributesSet
+class EavAttributesSetDto
 {
     /**
      * @var
