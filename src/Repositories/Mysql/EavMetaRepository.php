@@ -1,5 +1,9 @@
 <?php
 namespace Aztektec\EAV\Repositories\Mysql;
+use Aztektec\EAV\Dto\AttributeDto;
+use Aztektec\EAV\Dto\Meta\EavAttributeGroupDto;
+use Aztektec\EAV\Dto\Meta\EavAttributesSetDto;
+
 /**
  * Created by PhpStorm.
  * User: oalvarado
@@ -11,67 +15,67 @@ class EavMetaRepository
     /**
      * 
      */
-    public function getEntityAttribute(){}
+    public function getEntityAttribute($entity_type_id, $attribute_id){}
 
     /**
      * 
      */
-    public function saveEntityAttribute(){}
+    public function saveEntityAttribute(AttributeDto $attribute){}
 
     /**
      * 
      */
-    public function deleteEntityAttribute(){}
+    public function deleteEntityAttribute($entity_type_id, $attribute_id){}
 
     /**
      * 
      */
-    public function getAttributeGroup(){}
+    public function getAttributeGroup($attribute_group_id){}
 
     /**
      * 
      */
-    public function saveAttributeGroup(){}
+    public function saveAttributeGroup(EavAttributeGroupDto $attributeGroup){}
 
     /**
      * 
      */
-    public function deleteAttributeGroup(){}
+    public function deleteAttributeGroup($attribute_group_id){}
 
     /**
      * 
      */
-    public function insertAttributeGroup(){}
+    public function insertAttributeGroup(EavAttributeGroupDto $attributeGroup){}
 
     /**
      * 
      */
-    public function updateAttributeGroup(){}
+    public function updateAttributeGroup(EavAttributeGroupDto $attributeGroupDto){}
 
     /**
      * 
      */
-    public function getEntityAttributesSet(){}
+    public function getEntityAttributesSet($entity_attribute_set){}
 
     /**
      * 
      */
-    public function saveEntityAttributesSet(){}
+    public function saveEntityAttributesSet(EavAttributesSetDto $attributesSet){}
 
     /**
      * 
      */
-    public function deleteEntityAttributesSet(){}
+    public function deleteEntityAttributesSet($entity_attributes_set_id){}
 
     /**
      * 
      */
-    public function insertEntityAttributesSet(){}
+    public function insertEntityAttributesSet(EavAttributesSetDto $attributesSet){}
 
     /**
      * 
      */
-    public function updateEntityAttributesSet(){}
+    public function updateEntityAttributesSet(EavAttributesSetDto $attributesSet){}
 
     /**
      * 

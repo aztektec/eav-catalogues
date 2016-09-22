@@ -1,5 +1,7 @@
 <?php
 namespace Aztektec\EAV;
+use Aztektec\EAV\Interfaces\EavRepositoryInterface;
+
 /**
  * Created by PhpStorm.
  * User: oalvarado
@@ -9,9 +11,14 @@ namespace Aztektec\EAV;
 class EavMetaModel
 {
 
-    public function __construct()
-    {
+    /**
+     * @var
+     */
+    protected $eavRepository;
 
+    public function __construct(EavRepositoryInterface $eavRepositoryInterface)
+    {
+        $this->eavRepository = $eavRepositoryInterface;
     }
     
     public function getEntityAttribute(){}
