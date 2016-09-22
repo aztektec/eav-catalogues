@@ -7,7 +7,7 @@ namespace Aztektec\EAV\Dto;
  * Date: 12/09/16
  * Time: 0:10
  */
-class EntitiesDto
+class EntityDto
 {
     /**
      * @var
@@ -48,6 +48,11 @@ class EntitiesDto
      * @var
      */
     protected $entity_active;
+
+    /**
+     * @var
+     */
+    protected $attributes;
 
     /**
      * @return mixed
@@ -193,5 +198,24 @@ class EntitiesDto
         return $this;
     }
 
+    /**
+     * @return mixed
+     */
+    public function getAttributes()
+    {
+        return $this->attributes;
+    }
 
+    /**
+     * @param mixed $attributes
+     * @return EntityDto
+     */
+    public function setAttributes($attributes)
+    {
+        $this->attributes = $attributes;
+        return $this;
+    }
+
+
+    
 }
