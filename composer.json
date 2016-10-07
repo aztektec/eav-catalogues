@@ -1,9 +1,9 @@
 {
-  "name": "aztektec/eav-catalogues",
+  "name": "omnestek/eav-catalogues",
   "type": "library",
   "description": "EAV Library Implementation for Codeigniter with PHP >=5.3",
   "keywords": ["eav", "codeigniter"],
-  "homepage": "http://www.aztektec.com.mx/",
+  "homepage": "http://omaralvarado.mx/",
   "license": "MIT",
   "authors": [
     {
@@ -20,7 +20,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Aztektec\\EAV\\": "src/Aztectek/EAV"
+      "Omnestek\\EAV\\": "src/Omnestek/EAV"
     }
   }
 }
